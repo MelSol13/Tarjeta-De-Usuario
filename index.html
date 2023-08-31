@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Usuario</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img ondblclick="cambia_imagen(this)" src="img/user-circle.png" alt="User">
+        </div>
+        <div class="card-body">   
+            <h1 onmouseover="sobreNombre(this)"
+            onmouseout="fueraNombre(this)">Melissa Solano</h1>   
+            <h3>
+                <img onclick="eliminar(this)" src="img/map-marker.png" 
+                alt="marcador de mapa" 
+                class="icon"> Guápiles, Costa Rica
+            </h3> 
+            <p ondblclick="dobleClick(this)" class="parrafo">
+                Estudiante de programacion -
+                <br>Amante de los perritos
+            </p>
+            <a href="#" onclick="saluda()">
+                <img src="img/gear.png"
+                alt="Engrane"
+                class="icon">Editar Perfil
+            </a>
+            <button onmouseover="overButton(this)"
+            onmouseout="outButton(this)">Botón 1</button>
+            <button  onmouseover="overButton(this)"
+            onmouseout="outButton(this)">Botón 2</button>
+            <button  onmouseover="overButton(this)"
+            onmouseout="outButton(this)">Botón 3</button>
+            <button onclick="cambia_nombre()">Cambia el nombre</button>
+            <h2 class="otro_titulo">Otro título</h2>
+            <button onclick="cambio_clase()">Cambia de clase</button>
+            <div class="cuadrado azul">
+
+            </div>
+            <h3><span>0</span> clicks</h3>
+            <button onclick="nuevo_click()">Hiciste click</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
